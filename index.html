@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Arikrishnan</title>
+    <link rel="stylesheet" href="./singlepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div class="logo-text">Arikrishnan C</div>
+      </div>
+      <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="navlinks">
+          <li><a href="#home" onclick="closeMenu()">Home</a></li>
+          <li><a href="#blog" onclick="closeMenu()">Blog</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="hero-pic">
+        <img src="./IMG_20250301_194946.jpg" alt="Profile pic" />
+      </div>
+      <div class="hero-text">
+        <h5>Hi, I'm <span class="input"></span></h5>
+        <h1>Arikrishnan</h1>
+        <p>Frontend Developer skilled in HTML, CSS, and JavaScript.</p>
+        <a href="./Ari - Resume_page-0001.jpg" download class="btn"
+          >Download CV</a
+        >
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+
+    <section id="blog">
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="Search blog posts..." />
+        <button onclick="searchPosts()">Search</button>
+      </div>
+
+      <div class="blog-post">
+        <h2>Getting Started with Java</h2>
+        <p>
+          Java is a versatile and powerful programming language. In this post, I
+          will share my journey of learning Java, starting from basic syntax to
+          object-oriented programming.
+
+          <span class="extra-content"
+            >Since you have a background in Computer Science and frontend
+            development (HTML, CSS, JavaScript), learning Java will help you
+            expand into backend development, Android app development, and
+            software engineering.</span
+          >
+          <a href="#" class="read-more">Read More</a>
+        </p>
+      </div>
+
+      <div class="blog-post">
+        <h2>Building Responsive Websites with HTML, CSS, and JavaScript</h2>
+        <p>
+          Frontend development is an essential skill for creating interactive
+          and visually appealing websites. Here, I discuss how I use HTML, CSS,
+          and JavaScript to build responsive designs.
+
+          <span class="extra-content"
+            >Since you have frontend development skills, this guide will help
+            you refine your expertise in building responsive and interactive
+            websites. Responsive web design ensures that websites look great on
+            all devices—desktops, tablets, and mobile phones.
+          </span>
+          <a href="#" class="read-more">Read More</a>
+        </p>
+      </div>
+
+      <div class="blog-post">
+        <h2>Java Collections Framework Explained</h2>
+        <p>
+          The Java Collections Framework provides powerful data structures. In
+          this post, I will explain Lists, Sets, and Maps and how to use them
+          efficiently.
+
+          <span class="extra-content"
+            >The Java Collections Framework (JCF) is a set of classes and
+            interfaces that help in storing and managing groups of objects
+            efficiently. Since you have a background in Computer Science,
+            understanding collections will help you manage data structures like
+            lists, sets, and maps effectively in Java.</span
+          >
+          <a href="#" class="read-more">Read More</a>
+        </p>
+      </div>
+
+      <div class="blog-post">
+        <h2>Mastering JavaScript ES6 Features</h2>
+        <p>
+          ES6 introduced many new features that make JavaScript more powerful
+          and readable. Learn about arrow functions, template literals,
+          destructuring, and more.
+
+          <span class="extra-content"
+            >JavaScript ES6 (ECMAScript 2015) introduced powerful new features
+            that make coding more efficient, readable, and maintainable. Since
+            you're skilled in HTML, CSS, and JavaScript, mastering ES6 will help
+            you write cleaner and more modern JavaScript code.</span
+          >
+          <a href="#" class="read-more">Read More</a>
+        </p>
+      </div>
+
+      <div class="blog-post">
+        <h2>Best Practices for Clean and Maintainable Code</h2>
+        <p>
+          Writing clean and maintainable code is an important skill for every
+          developer. In this post, I share my best practices and coding
+          standards for better readability and performance.
+
+          <span class="extra-content"
+            >Writing clean and maintainable code is essential for building
+            scalable applications, making debugging easier, and ensuring that
+            other developers (or even your future self) can understand the code
+            efficiently. Since you’re working on a personal portfolio website
+            using HTML, CSS, and JavaScript, following these best practices will
+            help keep your project organized and professional.
+          </span>
+          <a href="#" class="read-more">Read More</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 id="contact-me">Contact Me</h2>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:arirohan322003@gmail.com">arirohan322003@gmail.com</a>
+      </p>
+      <p>
+        <strong>LinkedIn:</strong> <a href="">linkedin.com/in/arikrishnan</a>
+      </p>
+
+      <div class="contact-form">
+        <h2 id="send-message">Send a Message</h2>
+        <form onsubmit="return submitForm(event)">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <br />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="./singlepage.js"></script>
+  </body>
+</html>
